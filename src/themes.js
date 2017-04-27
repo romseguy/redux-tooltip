@@ -7,8 +7,7 @@ export const simple = {
   },
   content: {
     fontSize: '14px',
-    lineHeight: '16px',
-    padding: '8px 10px',
+    lineHeight: '16px'
   },
   border: {
     borderColor: 'white',
