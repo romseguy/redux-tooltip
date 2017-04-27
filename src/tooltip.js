@@ -93,10 +93,9 @@ class Tooltip extends Component {
     style.shadow = { ...style.content, visibility: 'hidden', position: 'absolute' };
 
     return (
-      <div>
+      <div style={style.base}>
         <div
           ref="tooltip"
-          style={style.base}
           id={id}
           className={className}
           onMouseEnter={onHover}
