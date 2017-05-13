@@ -13,7 +13,7 @@ function dimension(el) {
  * @return {Object}
  */
 export function position(el) {
-  const pos = el.getBoundingClientRect();
+  const pos = el ? el.getBoundingClientRect() : {};
   const { pageYOffset, pageXOffset } = window;
   const { scrollTop, clientTop, scrollLeft, clientLeft } = document.documentElement;
   const winTop = (pageYOffset || scrollTop) - clientTop;
